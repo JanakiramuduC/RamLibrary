@@ -70,28 +70,4 @@ Logins:any=[];
       }
     );
   }
-
-  // fnLogin(useremail:any,pass:any){
-  //   console.log("loginnn")
-
-  //   this.service.getLogins().subscribe(
-  //     (res:any)=>{
-  //       this.Logins=res;
-  //       let loginfo=this.Logins.filter((log:any)=>{
-  //         return log.userEmail==useremail && log.password==pass;
-  //       })
-  //       if(loginfo.length>0){
-  //         localStorage.setItem("LOGGED_IN",JSON.stringify(loginfo[0]));
-  //         this.router.navigate(['/home']);
-  //       }
-  //       else{
-  //         alert("Invalid credentials");
-  //       }
-
-
-  //     }
-  //   );
-
-    
-  // }
 }
