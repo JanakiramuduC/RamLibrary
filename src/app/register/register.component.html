@@ -1,0 +1,62 @@
+<p>register works!</p>
+<div class="desc-content">
+    <form [formGroup]="signupForm">
+
+    
+    <mat-card  class="matcardcss" >
+
+        <mat-form-field  appearance="fill">
+            <mat-label>First Name</mat-label>
+            <input  matInput placeholder="Enter First Name"
+            calss="inputcss" type="text" formControlName="FirstName">
+        </mat-form-field>
+        <br>
+        <mat-form-field  appearance="fill">
+            <mat-label>Last Name</mat-label>
+            <input  matInput placeholder="Enter Last Name"
+            calss="inputcss" type="text" formControlName="LastName">
+        </mat-form-field>
+        <br>
+        <mat-form-field  appearance="fill">
+            <mat-label>Date of Birth</mat-label>
+            <input  matInput placeholder="Enter DateOfBirth"
+            calss="inputcss" type="date" formControlName="Age">
+        </mat-form-field>
+        <br>
+        <mat-form-field  appearance="fill">
+            <mat-label>Gender</mat-label>
+            <input  matInput placeholder="Enter Last Name"
+            calss="inputcss" type="text" formControlName="Gender">
+        </mat-form-field>
+        <br>
+
+
+        <mat-form-field  appearance="fill">
+            <mat-label>UserEmail</mat-label>
+            <input  matInput placeholder="Enter UserEmailId"
+            calss="inputcss" type="email" formControlName="userEmail" #userEmaiId>
+        </mat-form-field>
+        <br>
+
+
+        <mat-form-field>
+            <mat-label>Create Passwaord</mat-label>
+            <input  matInput placeholder="Enter Create Passwaord"
+            calss="inputcss" type="password" formControlName="CreatePasswaord" #CreatePass>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Confirm Passwaord</mat-label>
+            <input  matInput placeholder="Enter Confirm Passwaord"
+            calss="inputcss" type="password" formControlName="ConfirmPasswaord" #ConfirmPass>
+        </mat-form-field>
+        <br>
+        <button [disabled]="!signupForm.valid" mat-raised-button color="primary"
+        class="btn" (click)="fnsign(userEmaiId.value,CreatePass.value,ConfirmPass.value)">
+            Login</button> &nbsp;&nbsp;&nbsp;
+        <a routerLink="/register" class="regis">Register</a>
+    </mat-card>
+
+</form>
+</div>
+

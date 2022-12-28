@@ -1,0 +1,37 @@
+.desc-content{
+    height: 150px;
+    width: 300px;
+    align-items: center;
+    margin: 10px;
+    vertical-align: middle;
+    background-color: antiquewhite;
+
+}
+button{
+    color: blue;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow:darkorange;
+    background-color: rgb(189, 151, 151);
+}
+.regis{
+    color: blue;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow:darkorange;
+   text-align: center;
+}
+/* .matformcss{
+
+}
+.matcardcss{
+
+} */

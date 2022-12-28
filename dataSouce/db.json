@@ -1,0 +1,32 @@
+{
+  "Logins": [
+    {
+      "id": 1,
+      "userEmail": "ram@gmail.com",
+      "password": "admin123"
+    },
+    {
+      "id": 2,
+      "userEmail": "jan@gmail.com",
+      "password": "ramudu123"
+    },
+    {
+      "firstName": "Janakiramudu",
+      "lastName": "c",
+      "age": "1000-10-01",
+      "gender": "2",
+      "userEmail": "ram1@gmail.com",
+      "password": "12345678",
+      "id": 3
+    },
+    {
+      "firstName": "Janakiramudu",
+      "lastName": "c",
+      "age": "2022-12-01",
+      "gender": "male",
+      "userEmail": "ram2@gmail.com",
+      "password": "12345678",
+      "id": 4
+    }
+  ]
+}
