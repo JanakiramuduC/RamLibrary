@@ -1,10 +1,11 @@
 .desc-content{
+    margin-left: 300px;
     height: 150px;
     width: 300px;
     align-items: center;
     margin: 10px;
     vertical-align: middle;
-    background-color: antiquewhite;
+    background-color: rgb(72, 66, 58);
 
 }
 button{
@@ -13,13 +14,13 @@ button{
     font-weight: 700;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 5px;
-    padding: 5px;
+    padding: 30px;
     border-radius: 20px;
     box-shadow:darkorange;
     background-color: rgb(189, 151, 151);
 }
 .regis{
-    color: blue;
+    color: rgba(255, 55, 0, 0.825);
     font-size: xx-large;
     font-weight: 700;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -29,9 +30,12 @@ button{
     box-shadow:darkorange;
    text-align: center;
 }
-/* .matformcss{
+.matformcss{
+    color: black;
 
 }
 .matcardcss{
+    padding: 12px;
+    background-color: rgb(247, 219, 182);
 
-} */
+} 

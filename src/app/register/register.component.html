@@ -1,4 +1,4 @@
-<p>register works!</p>
+
 <div class="desc-content">
     <form [formGroup]="signupForm">
 
@@ -9,21 +9,25 @@
             <mat-label>Last Name</mat-label>
             <input  matInput placeholder="Enter Last Name"
             calss="inputcss" type="text" formControlName="LastName">
-        </mat-form-field>
-        <br>
-        <mat-form-field  appearance="fill">
+      
             <mat-label>Date of Birth</mat-label>
             <input  matInput placeholder="Enter DateOfBirth"
             calss="inputcss" type="date" formControlName="Age">
-        </mat-form-field>
-        <br>
-        <mat-form-field  appearance="fill">
+       
             <mat-label>Gender</mat-label>
             <input  matInput placeholder="Enter Last Name"
             calss="inputcss" type="text" formControlName="Gender">
-        </mat-form-field>
-        <br>
-
+       
+            <mat-label>Role</mat-label>
+           <select formControalName="role">
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+           </select>
+        
+    <input type="radio" id="Male" name="gender" value="Male">
+    <label for="Male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
                 
             <mat-label>UserEmail</mat-label>
             <input  matInput placeholder="Enter UserEmailId"
@@ -32,14 +36,11 @@
             <mat-label>Create Passwaord</mat-label>
             <input  matInput placeholder="Enter Create Passwaord"
             calss="inputcss" type="password" formControlName="CreatePasswaord" #CreatePass>
-        </mat-form-field>
-        <br>
-        <mat-form-field>
+    
             <mat-label>Confirm Passwaord</mat-label>
             <input  matInput placeholder="Enter Confirm Passwaord"
             calss="inputcss" type="password" formControlName="ConfirmPasswaord" #ConfirmPass>
-        </mat-form-field>
-        <br>
+        
         <button [disabled]="!signupForm.valid" mat-raised-button color="primary"
         class="btn" (click)="fnsign(userEmaiId.value,CreatePass.value,ConfirmPass.value)">
             Login</button> &nbsp;&nbsp;&nbsp;

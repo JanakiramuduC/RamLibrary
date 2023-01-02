@@ -1,0 +1,11 @@
+<p>updatebook works!</p>
+<form [formGroup]="UpdateBookForm">
+    <input type="text" formControlName="ISBN"><br>
+    <input type="text" formControlName="Title"><br>
+    <input type="text" formControlName="Author"><br>
+    <input type="text" formControlName="Category"><br>
+    <input type="text" formControlName="Description"><br>
+    
+
+    <button [disabled]="!UpdateBookForm.dirty" mat-raised-button color="primary" (click)="updateBook()">Update</button>
+</form>

@@ -6,7 +6,7 @@
         <mat-form-field  appearance="fill">
             <mat-label>UserEmail</mat-label>
             <input  matInput placeholder="Enter UserEmailId"
-            calss="inputcss" type="email" formControlName="userEmail" #userEmail1>
+            calss="inputcss" type="email" formControlName="userEmail" #userEmail1chandra>
         </mat-form-field>
         <br>
         <mat-form-field>
@@ -16,7 +16,7 @@
         </mat-form-field>
         <br>
         <button [disabled]="!loginForm.valid" mat-raised-button color="primary"
-        class="btn" (click)="fnLogin(userEmail1.value,password1.value)">
+        class="btn" (click)="fnLogin(userEmail1chandra.value,password1.value)">
             Login</button> &nbsp;&nbsp;&nbsp;
         <a routerLink="/register" class="regis">Register</a>
     </mat-card>

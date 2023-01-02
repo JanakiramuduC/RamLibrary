@@ -1,1 +1,39 @@
 <p>home works!</p>
+<mat-toolbar>
+    hhhh
+    <table>
+        <tr>
+            <td>
+                Ram Librarymanegemnt
+            </td>
+            <td>
+                us {{ userName }} userId ={{userid}}
+            </td>
+            <td>
+                <a routerLink="/login" class="regis">Logout</a>
+            </td>
+        </tr>
+    </table>
+</mat-toolbar>
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+        <table>
+            <tr>
+                <td>
+                    <a routerLink="/home/books">Books</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a routerLink="/home/addbook">Add Book</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a routerLink="/home/updatebook">Update Book</a>
+                </td>
+            </tr>
+        </table>
+    </mat-drawer>
+<mat-drawer-container><router-outlet></router-outlet></mat-drawer-container>
+</mat-drawer-container>

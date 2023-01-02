@@ -21,13 +21,19 @@ import {MatIconModule}from '@angular/material/icon';
 import {MatSidenavModule}from '@angular/material/sidenav';
 import {MatTableModule}from '@angular/material/table';
 import {MatPaginatorModule}from '@angular/material/paginator';
+import { BooksComponent } from './books/books.component';
+import { UpdatebookComponent } from './updatebook/updatebook.component';
+import { AddbookComponent } from './addbook/addbook.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    BooksComponent,
+    UpdatebookComponent,
+    AddbookComponent
   ],
   imports: [
     BrowserModule,

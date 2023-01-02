@@ -2,13 +2,17 @@
   "Logins": [
     {
       "id": 1,
+      "firstName": "Janakiramudu",
       "userEmail": "ram@gmail.com",
-      "password": "admin123"
+      "password": "admin123",
+      "role": "admin"
     },
     {
       "id": 2,
+      "firstName": "Janakiramudu",
       "userEmail": "jan@gmail.com",
-      "password": "ramudu123"
+      "password": "ramudu123",
+      "role": "admin1"
     },
     {
       "firstName": "Janakiramudu",
@@ -17,6 +21,7 @@
       "gender": "2",
       "userEmail": "ram1@gmail.com",
       "password": "12345678",
+      "role": "user",
       "id": 3
     },
     {
@@ -26,7 +31,74 @@
       "gender": "male",
       "userEmail": "ram2@gmail.com",
       "password": "12345678",
+      "role": "user",
       "id": 4
+    }
+  ],
+  "Books": [
+    {
+      "id": 1,
+      "ISBN": "ISBN BOOK 1",
+      "Title": "BOOK Title 101 ",
+      "Author": "Book Author 1001",
+      "Category": "Category Book 001",
+      "Description": "Description Book 2001"
+    },
+    {
+      "id": 2,
+      "ISBN": "ISBN BOOK 2",
+      "Title": "BOOK Title 102 ",
+      "Author": "Book Author 1002",
+      "Category": "Category Book 002",
+      "Description": "Description Book 2002"
+    },
+    {
+      "id": 3,
+      "ISBN": "ISBN BOOK 3",
+      "Title": "BOOK Title 103 ",
+      "Author": "Book Author 1003",
+      "Category": "Category Book 003",
+      "Description": "Description Book 2003"
+    },
+    {
+      "id": 4,
+      "ISBN": "ISBN BOOK 4",
+      "Title": "BOOK Title 104 ",
+      "Author": "Book Author 1004",
+      "Category": "Category Book 004",
+      "Description": "Description Book 2004"
+    },
+    {
+      "ISBN": "ISBN Chandra 115",
+      "Title": "Chandra Title 105 ",
+      "Author": "Chandra Author 1005",
+      "Category": "Category Chandra  Book 005",
+      "Description": "122222  Description Book 202020",
+      "id": 5
+    },
+    {
+      "ISBN": "25000",
+      "Title": "646456465",
+      "Author": "153151",
+      "Category": "132132",
+      "Description": "1231321321321",
+      "id": 6
+    },
+    {
+      "ISBN": "111",
+      "Title": "jgvjhv",
+      "Author": "jvj",
+      "Category": "jv",
+      "Description": "jv",
+      "id": 7
+    },
+    {
+      "ISBN": "222222",
+      "Title": "vjvj",
+      "Author": "bh",
+      "Category": "b",
+      "Description": "bjmb",
+      "id": 8
     }
   ]
 }

@@ -36,4 +36,28 @@ export class DataService {
     return this.client.post(apiURL,logininfo);
   }
 
+  public getBooks(){
+    var apiURL="http://localhost:3000/Books";
+    return this.client.get(apiURL);
+  }
+
+  getBookById(id:string){
+    var apiURL="http://localhost:3000/Books/"+id;
+    return this.client.get(apiURL);
+  }
+
+  updateBookById(id:string,updatebookinfo:any){
+    var apiURL="http://localhost:3000/Books/"+id;
+    return this.client.put(apiURL,updatebookinfo);
+  }
+  deteBookBy(id:string){
+    var apiURL="http://localhost:3000/Books/"+id;
+    return this.client.delete(apiURL);
+  }
+
+  saveBook(bookInfo:any){ 
+    var apiURL="http://localhost:3000/Books";
+    return this.client.post(apiURL,bookInfo);
+  }
+
 }

@@ -1,0 +1,12 @@
+<p>addbook works!</p>
+
+<form [formGroup]="AddBookForm">
+    <input type="text" formControlName="ISBN" placeholder="Enter Book ISBN"><br>
+    <input type="text" formControlName="Title" placeholder="Enter Book Title"><br>
+    <input type="text" formControlName="Author"placeholder="Enter Book Author"><br>
+    <input type="text" formControlName="Category"placeholder="Enter Book Category"><br>
+    <input type="text" formControlName="Description"placeholder="Enter Book Description"><br>
+    
+
+    <button [disabled]="!AddBookForm.valid" mat-raised-button color="primary" (click)="addBook()">Submit</button>
+</form>

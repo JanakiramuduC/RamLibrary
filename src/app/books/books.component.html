@@ -1,0 +1,56 @@
+<h1>{{Books.id}}</h1>
+<button (click)="fnAddBook()"><mat-icon>add</mat-icon></button>
+<mat-form-field>
+    <mat-label>Search Book<mat-icon>search</mat-icon></mat-label>
+    <input matInput placeholder="Seach coloms" #inputData (keyup)="applyFilter(inputData.value)">
+</mat-form-field>
+
+<mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="ISBN">
+        <mat-header-cell *matHeaderCellDef>ISBN</mat-header-cell>
+        <mat-cell *matCellDef="let Books">{{Books.ISBN}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Title">
+        <mat-header-cell *matHeaderCellDef>Title</mat-header-cell>
+        <mat-cell *matCellDef="let Books">{{Books.Title}}</mat-cell>
+    </ng-container>
+
+    
+    <ng-container matColumnDef="Author">
+        <mat-header-cell *matHeaderCellDef>Author</mat-header-cell>
+        <mat-cell *matCellDef="let Books">{{Books.Author}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Category">
+        <mat-header-cell *matHeaderCellDef>Category</mat-header-cell>
+        <mat-cell *matCellDef="let Books">{{Books.Category}}</mat-cell>
+    </ng-container>
+
+    
+    <ng-container matColumnDef="Description">
+        <mat-header-cell *matHeaderCellDef>Description</mat-header-cell>
+        <mat-cell *matCellDef="let Books">{{Books.Description}}</mat-cell>
+    </ng-container>
+        
+    <ng-container matColumnDef="Action">
+        <mat-header-cell *matHeaderCellDef>Action</mat-header-cell>
+        <mat-cell *matCellDef="let Book">
+
+            <button (click)="fnDelete(Book.id)">
+                <mat-icon>delete</mat-icon></button>&nbsp;&nbsp;
+            <button (click)="fnUpadte(Book.id)">
+                <mat-icon>edit</mat-icon></button>
+
+
+
+        </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumn"></mat-header-row>
+    <mat-row *matRowDef="let row; columns:displayedColumn;"></mat-row>
+</mat-table>
+
+<mat-paginator>
+    
+</mat-paginator>
