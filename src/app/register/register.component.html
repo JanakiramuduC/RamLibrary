@@ -2,16 +2,10 @@
 <div class="desc-content">
     <form [formGroup]="signupForm">
 
-    
     <mat-card  class="matcardcss" >
-
-        <mat-form-field  appearance="fill">
-            <mat-label>First Name</mat-label>
+      <mat-label>First Name</mat-label>
             <input  matInput placeholder="Enter First Name"
             calss="inputcss" type="text" formControlName="FirstName">
-        </mat-form-field>
-        <br>
-        <mat-form-field  appearance="fill">
             <mat-label>Last Name</mat-label>
             <input  matInput placeholder="Enter Last Name"
             calss="inputcss" type="text" formControlName="LastName">
@@ -30,16 +24,11 @@
         </mat-form-field>
         <br>
 
-
-        <mat-form-field  appearance="fill">
+                
             <mat-label>UserEmail</mat-label>
             <input  matInput placeholder="Enter UserEmailId"
             calss="inputcss" type="email" formControlName="userEmail" #userEmaiId>
-        </mat-form-field>
-        <br>
-
-
-        <mat-form-field>
+     
             <mat-label>Create Passwaord</mat-label>
             <input  matInput placeholder="Enter Create Passwaord"
             calss="inputcss" type="password" formControlName="CreatePasswaord" #CreatePass>
